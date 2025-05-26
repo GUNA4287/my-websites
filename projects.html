@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My WebSite</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      body{
+        background-color: #010127;
+      }
+      .card{
+            width: 250px;
+            height: 350px;
+          
+            perspective: 1000px;
+            cursor: pointer;
+            border-width: 0px;
+            background-color: #010127;
+        }
+        .card-inner{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .card:hover .card-inner{
+            transform: rotateY(180deg);
+        }
+        .card-front,
+        .card-back{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+           
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+        }
+        .card-front{
+            
+            border: 1px solid #e5e7eb;
+            background-size:cover;
+            background-position: center;
+            box-shadow: 0 0 20px red;
+
+        }
+        .card-back{
+            background-color: #8b5cf6;
+            color: white;
+            transform: rotateY(180deg);
+            box-shadow: 0 0 50px white;
+            background-size: cover;
+            background-position: center;
+        }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .card-front-header
+        {
+          text-align: center;
+          height: 20%;
+          background-color:transparent; 
+          width: 100%; 
+          height: 10%;
+          border-radius: 10px;
+
+        }
+        .card-front-body{
+          text-align: center;
+          height: 65%;
+
+        }
+        .card-front-footer{
+          
+          text-align:center;
+          height: 10%;
+          
+        }
+        
+        .card-back-header{
+          text-align: center;
+          height: 20%;
+          background-color:rgb(0,0,205,0.5);
+          width: 100%;
+          height: 10%; 
+          border-radius: 20px; 
+        
+ 
+        }
+        .card-back-body{
+          text-align: center;
+          height: 65%;
+
+        }
+        .card-back-footer{
+          
+        text-align:center;
+        height: 10%;
+        
+        }
+
+      .card-name
+      {
+        color: white;
+        font-weight: bold;
+      }
+      .card-amount
+      {
+        color: rgb(243, 239, 10);
+         font-weight: bold; 
+         font-size: 25px;
+         
+         height: 70px;
+         margin-top: 20px;
+         background-color: transparent;
+         
+         text-align: center;
+         width: 250px;
+         padding-top: 11px;
+         padding-right: 10px;
+         
+      }
+
+
+
+
+
+
+
+
+
+      .back-card-name
+        {
+          font-size: 25px; 
+          margin-top: -5px; color:white;
+        }
+        .language
+        {
+          font-weight:bold;
+           color:rgb(3, 3, 3);
+        }
+        .IDE
+        {
+          
+          
+          font-weight: bold;
+         color: white;
+        }
+        .Add-coines
+        {
+          color:goldenrod;
+          width: 100%;
+          height: 40%;
+          border-radius:20px;
+          font-weight: bold;
+        }
+        .ADD-card
+        {
+          width: 150px; 
+          height: 50px;
+          border-radius: 15px;
+          color: white ;
+          font-weight: bold;
+          font-size: 20px;
+          box-shadow: 0 0 20px black;
+          border-color: rgb(85, 83, 83);
+
+        }
+
+        .profile
+        {
+          border-radius: 80px;
+           background-color: red; width: 80px;height: 80px; border:2px solid white; 
+        }
+        .profile:hover
+        {
+          border: 2px solid white;
+          box-shadow: 0 0 30px white;
+          background-color: #010127;
+        }
+        
+        .scroll-view
+        {
+          width: 100%;
+          height: 50px;
+          overflow-x: auto;
+          overflow-y: hidden;
+          white-space: nowrap;
+         scrollbar-width: none;
+         font-weight: bold;
+         font-size: 29px;
+       
+    
+        }
+        
+        .inner-scroll-view
+        {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 10px;
+          
+          
+
+        }
+        .inner-scroll-view a{
+
+          margin-right: 20px;
+          text-decoration: none;
+          color:white;
+          
+
+        }
+        .inner-scroll-view a:hover{
+          color: gold;
+          text-shadow: 1px -1px 3px white;
+          
+        }
+
+
+
+
+
+
+
+
+
+
+   .complete-btn, .ongoing-btn
+    {
+      height: 38px;
+      width: 96px;
+      border-radius: 30px;
+
+    }
+
+    .complete-btn
+    {
+
+      background-color:white;
+      color:black;
+      font-weight: bold;
+      border: 2px solid white;
+      margin: 5px;
+    
+    }
+    .ongoing-btn
+    {
+      background-color: black;
+      color: white;
+      font-weight: bold;
+      border: 2px solid white;
+      margin: 5px;
+    
+    }
+    .ongoing-btn:hover
+    {
+      border: 2px solid black;
+      box-shadow: 0 0 10px white;
+    }
+    .complete-btn:hover
+    {
+      border: 2px solid black;
+      box-shadow: 0 0 10px white;
+    }
+    .about-me-body
+    {
+      background-color:#010127;
+      height: 100%;
+      width: 400px;
+      border-radius: 30px;
+    }
+    .about-me-div
+    {
+      background-color:#010127;
+      color: white;
+    }
+
+        
+    .date
+    {
+        color: rgb(16, 1, 39);
+        font-weight: bold;
+        font-size: 19px;
+    }
+
+
+
+
+
+
+         
+
+       
+    </style>
+  </head>
+<body>
+   
+<header class="sticky-top">
+   <nav  class="navbar navbar-dark navbar-expand-lg">
+     <div class="container-fluid" style="background-color: black;">
+        <!--logo-->
+       
+        <img src="data/main_logo.png" style="height: 80px;width: 80px; border-radius: 100px;" >
+       
+        <a class="navbar-brand me-auto" style=" font-size: 50px;color: yellow; font-weight: bolder;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin-left: 10px;" href="#">Projects</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ok" aria-controls="ok" aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
+        <!--menu-->
+        
+        <div class="collapse navbar-collapse " id="ok" style="font-size: 18px;">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="" style="color: yellow; font-weight: bolder;">projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+
+            </ul>
+        </div>
+     </div>
+   </nav>
+   
+</header>
+ <!--- body of this page -->
+<div class=" container-fluid">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+       <div class="row d-flex justify-content-center">
+        <div class="col-6 d-flex justify-content-center"><button class="complete-btn" onclick="complete_click()" id="account_btn">completed</button></div>
+       <div class="col-6 d-flex justify-content-center"><button class="ongoing-btn" onclick="window.location.href='ongoing.html'" id="about_btn">ongoing</button></div>
+       </div>
+      </div>
+      
+    </div>
+  </div>
+  
+<!-- body cards-->
+  <div class="row mt-5">
+
+    <!-- cord 1 starting point-->
+    <div class="col-12 col-md-4 col-sm-6 col-lg-3  mb-4 d-flex justify-content-center">
+      <!--  card body   -->
+      <div class="card">
+        <div class="card-inner">
+          <!--  cord front -->
+          <div class="card-front" style="background-image: url('data/moblie.png');">
+
+            <div class="card-front-header mt-1">
+              <h1 class="card-name">MOBILE</h1>
+            </div>
+             
+            <div class="card-front-body">
+
+            </div>
+
+            <div class="card-front-footer  ">
+
+              <h1 class="card-amount">Chat - Now</h1>
+
+            </div>
+          </div>
+          <!--  card back-->
+          <div class="card-back"  style="background-image: url('data/image.jpg')">
+
+            <div class="card-back-header mt-1">
+              <h1 class="back-card-name">Chat - Now</h1>
+            </div>
+
+            <div class="card-back-body mt-4">
+              <h2 class="language"> C#, XML, CS, serapi </h2>
+              <h1 class="IDE mt-4">.NET</h1>
+              <p5  class="IDE mt-4">Microsoft Visual Studio</p5>
+              <br>
+
+              <div class="row mt-3">
+                <div class="col-6">
+                    <p class="date">Oct - 2024</p>
+                </div>
+
+                <div class="col-6">
+                    <p class="date">Feb - 2025</p>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="card-back-footer mb-5">
+              <button type="button" class="btn btn-primary  ADD-card" onclick="window.location.href='project1.html'" >View</button>
+            </div>
+
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- cord 2 starting point-->
+    <div class="col-12 col-md-4 col-sm-6 col-lg-3  mb-4 d-flex justify-content-center">
+        <!--  card body   -->
+        <div class="card">
+          <div class="card-inner">
+            <!--  cord front -->
+            <div class="card-front" style="background-image: url('data/moblie.png');">
+  
+              <div class="card-front-header mt-1">
+                <h1 class="card-name">MOBILE</h1>
+              </div>
+               
+              <div class="card-front-body">
+  
+              </div>
+  
+              <div class="card-front-footer  ">
+  
+                <h1 class="card-amount"> TO - DO LIST</h1>
+  
+              </div>
+            </div>
+            <!--  card back-->
+            <div class="card-back"  style="background-image: url('data/image.jpg')">
+  
+              <div class="card-back-header mt-1">
+                <h1 class="back-card-name">TO - DO LIST</h1>
+              </div>
+  
+              <div class="card-back-body mt-4">
+              <h2 class="language"> C#, XML, CS </h2>
+              <h1 class="IDE mt-4">.NET</h1>
+              <p5  class="IDE mt-4">Microsoft Visual Studio</p5>
+              <br>
+                <br>
+  
+                <div class="row mt-3">
+                  <div class="col-6">
+                      <p class="date">Jun - 2024</p>
+                  </div>
+  
+                  <div class="col-6">
+                      <p class="date">Age - 2024</p>
+                  </div>
+                </div>
+                
+              </div>
+  
+              <div class="card-back-footer mb-5">
+                <button type="button" class="btn btn-primary  ADD-card" onclick="window.location.href='project2.html'">View</button>
+              </div>
+  
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    <!-- cord 3 starting point-->
+    <div class="col-12 col-md-4 col-sm-6 col-lg-3  mb-4 d-flex justify-content-center">
+        <!--  card body   -->
+        <div class="card">
+          <div class="card-inner">
+            <!--  cord front -->
+            <div class="card-front" style="background-image: url('data/moblie.png');">
+  
+              <div class="card-front-header mt-1">
+                <h1 class="card-name">MOBILE</h1>
+              </div>
+               
+              <div class="card-front-body">
+  
+              </div>
+  
+              <div class="card-front-footer  ">
+  
+                <h1 class="card-amount">Calculater</h1>
+  
+              </div>
+            </div>
+            <!--  card back-->
+            <div class="card-back"  style="background-image: url('data/image.jpg')">
+  
+              <div class="card-back-header mt-1">
+                <h1 class="back-card-name">Calculater</h1>
+              </div>
+  
+              <div class="card-back-body mt-4">
+              <h2 class="language"> C#, XML, CS </h2>
+              <h1 class="IDE mt-4">.NET</h1>
+              <p5  class="IDE mt-4">Microsoft Visual Studio</p5>
+              <br>
+              <br>
+  
+                <div class="row mt-3">
+                  <div class="col-6">
+                      <p class="date">Nov - 2023</p>
+                  </div>
+  
+                  <div class="col-6">
+                      <p class="date">Mar - 2024</p>
+                  </div>
+                </div>
+                
+              </div>
+  
+              <div class="card-back-footer mb-5">
+                <button type="button" class="btn btn-primary  ADD-card" onclick="window.location.href='project3.html'">View</button>
+              </div>
+  
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    <!-- cord 4 starting point-->
+    <div class="col-12 col-md-4 col-sm-6 col-lg-3  mb-4 d-flex justify-content-center">
+        <!--  card body   -->
+        <div class="card">
+          <div class="card-inner">
+            <!--  cord front -->
+            <div class="card-front" style="background-image: url('data/desktop.png');">
+  
+              <div class="card-front-header mt-1">
+                <h1 class="card-name">DESKTOP</h1>
+              </div>
+               
+              <div class="card-front-body">
+  
+              </div>
+  
+              <div class="card-front-footer  ">
+  
+                <h1 class="card-amount" style="font-size: 19px;">Employee Attendance Monitoring</h1>
+  
+              </div>
+            </div>
+            <!--  card back-->
+            <div class="card-back"  style="background-image: url('data/image.jpg')">
+  
+              <div class="card-back-header mt-1">
+                <h1 class="back-card-name" style="font-size: 15px; padding-top: 6px;">Employee Attendance Monitoring</h1>
+              </div>
+  
+              <div class="card-back-body mt-4">
+                <h2 class="language"> C#, SQL, CS </h2>
+                <h1 class="IDE mt-4">ASP.NET</h1>
+                <p5  class="IDE mt-4">Microsoft Visual Studio</p5>
+                <br>
+                <br>
+  
+                <div class="row mt-3">
+                  <div class="col-6">
+                      <p class="date">Apr - 2023</p>
+                  </div>
+  
+                  <div class="col-6">
+                      <p class="date">Aug - 2023</p>
+                  </div>
+                </div>
+                
+              </div>
+  
+              <div class="card-back-footer mb-5">
+                <button type="button" class="btn btn-primary  ADD-card" onclick="window.location.href='project4.html'" >View</button>
+              </div>
+  
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    <!-- cord 5 starting point-->
+    <div class="col-12 col-md-4 col-sm-6 col-lg-3  mb-4 d-flex justify-content-center">
+        <!--  card body   -->
+        <div class="card">
+          <div class="card-inner">
+            <!--  cord front -->
+            <div class="card-front" style="background-image: url('data/desktop.png');">
+  
+              <div class="card-front-header mt-1">
+                <h1 class="card-name">DESKTOP</h1>
+              </div>
+               
+              <div class="card-front-body">
+  
+              </div>
+  
+              <div class="card-front-footer  ">
+  
+                <h1 class="card-amount" style="font-size: 20px; padding-top: 1px;">Exam Cell Seating Arrangement System</h1>
+  
+              </div>
+            </div>
+            <!--  card back-->
+            <div class="card-back"  style="background-image: url('data/image.jpg')">
+  
+              <div class="card-back-header mt-1">
+                <h1 class="back-card-name" style="font-size: 13px; padding-top: 6px;">Exam Cell Seating Arrangement System</h1>
+              </div>
+  
+              <div class="card-back-body mt-4">
+                <h2 class="language">c#, Excel, cs</h2>
+                <h1 class="IDE mt-4">ASP.NET</h1>
+                <p5  class="IDE mt-4">Microsoft Visual Studio</p5>
+                <br>
+                <br>
+  
+                <div class="row mt-3">
+                  <div class="col-6">
+                      <p class="date">Dec - 2022</p>
+                  </div>
+  
+                  <div class="col-6">
+                      <p class="date">Feb - 2023</p>
+                  </div>
+                </div>
+                
+              </div>
+  
+              <div class="card-back-footer mb-5">
+                <button type="button" class="btn btn-primary  ADD-card" onclick="window.location.href='project5.html'" >View</button>
+              </div>
+  
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      
+    <!-- cord 6 starting point-->
+    <div class="col-12 col-md-4 col-sm-6 col-lg-3  mb-4 d-flex justify-content-center">
+        <!--  card body   -->
+        <div class="card">
+          <div class="card-inner">
+            <!--  cord front -->
+            <div class="card-front" style="background-image: url('data/desktop.png');">
+  
+              <div class="card-front-header mt-1">
+                <h1 class="card-name">WebSite</h1>
+              </div>
+               
+              <div class="card-front-body">
+  
+              </div>
+  
+              <div class="card-front-footer  ">
+  
+                <h1 class="card-amount" style="font-size: 20px;margin-top: 7px;">Freelance project in IT industry</h1>
+  
+              </div>
+            </div>
+            <!--  card back-->
+            <div class="card-back"  style="background-image: url('data/image.jpg')">
+  
+              <div class="card-back-header mt-1">
+                <h1 class="back-card-name" style="font-size: 16px;padding-top: 7px;" >Freelance project in IT industry</h1>
+              </div>
+  
+              <div class="card-back-body mt-4">
+                <h2 class="language" style="font-size: 25px;">Asp.Net, HTML, CS, Bootstrap, sql</h2>
+                <h1 class="IDE mt-3" style="font-size: 25px;">ASP.NET</h1>
+                <h1 class="IDE mt-1" style="font-size: 15px;">Microsoft Visual Studio</h1>
+                <br>
+  
+                <div class="row mt-2">
+                  <div class="col-6">
+                      <p class="date">Dec - 2024</p>
+                  </div>
+  
+                  <div class="col-6">
+                      <p class="date">Feb - 2025</p>
+                  </div>
+                </div>
+                
+              </div>
+  
+              <div class="card-back-footer mb-5">
+                <button type="button" class="btn btn-primary  ADD-card" onclick="window.location.href='project6.html'">View</button>
+              </div>
+  
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+  </div>
+
+</div>
+
+</div>
+    <!--footer div-->
+    <footer class="p-3 mt-1" style="color: yellow; background-color: black; font-size: 15px;">
+        <div class="row">
+      
+          <div class="col-6 col-lg-4">
+            <p> 2025 my brand all righ reserved</p>
+      
+          </div>
+          <div class="col-6 col-lg-4">
+            <ul class="list-inline" >
+             
+              <li class="list-inline-item"><a class=" text-decoration-none" href="#" style="color: yellow;"> terms of serveices</a></li>
+              <li class="list-inline-item"><a class=" text-decoration-none "href="#" style="color: yellow;" > privacy policey</a></li>
+              <li class="list-inline-item"><a class=" text-decoration-none" href="#" style="color: yellow;"> sitemap</a></li>
+      
+            </ul>
+           
+          </div>
+          <div class="col-12  col-lg-4"  >
+            <img src="data/main_logo.png" style="height: 40px;width: 40px ; margin-left: 50%; border-radius: 100px; " >
+             
+          </div>
+        </div>
+      </footer>
+
+    <!---------------------------------------------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+
+
+          function ab_click()
+          {
+            
+
+          }
+
+
+    </script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
