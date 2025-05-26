@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="390dp"
+    android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
+    android:layout_height="match_parent"
+    android:background="#3f48cc">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:layout_marginTop="270dp"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:padding="30dp"
+            android:background="@android:color/transparent"                            
+            android:text="     Wellcome To ComeBack sir, I am HIDDEN ,One Of The ChatBot Version 25.01  ,  You Are Ask A Any Type Of Question,I Will Be  Show A Answer In User Friendly" 
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:textAlignment="viewStart"
+            android:textStyle="bold"/>
+
+        
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:background="@android:color/holo_red_dark"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:visibility="invisible"
+            android:id="@+id/map"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:background="@android:color/holo_red_dark"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="100dp"
+            android:visibility="invisible"
+            android:id="@+id/gmail"/>
+
+        
+        
+        
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="365dp"
+        android:layout_height="280dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bat_h_top">
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="83dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bat_img"/>
+
+    </RelativeLayout>
+
+
+
+    
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"           
+        android:layout_marginTop="680dp" 
+        android:layout_marginLeft= "3dp"
+        android:background="@drawable/All_menu"
+        android:id="@+id/All_menu"
+          />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="700dp"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/bot_chat_open"
+        android:id="@+id/bot_chat_btn" />
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="63dp"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="680dp"
+        android:layout_marginLeft="80dp"
+        android:orientation="horizontal"
+       
+        android:id="@+id/All_menu_layout"
+        android:visibility="invisible">
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/Chat_logo"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:id="@+id/chat"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/music_logo"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="6dp"
+            android:id="@+id/music"
+            />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/reels_logo"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="6dp"
+            />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/profile_logo"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="6dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

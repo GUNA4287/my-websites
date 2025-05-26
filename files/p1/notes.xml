@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="390dp"
+    android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="0.0dp" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/notes">
+        
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/back_icon"
+            android:id="@+id/chat_back"/>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="User_name"
+            android:textSize="28dp"
+            android:gravity="center"
+            android:layout_marginLeft="120dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="355dp"
+            android:background="@drawable/setting"
+            android:id="@+id/setting"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/male1"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="150dp"
+                    />
+
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/setting_layout"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="85dp"
+        android:id="@+id/setting_layout"
+      
+        android:visibility="invisible"
+        >
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:text="block"
+            android:id="@+id/block"
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+        
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="240dp"
+        android:layout_height="200dp"
+        android:background="@drawable/notes_info"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="80dp"
+        >                           
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+            android:padding="10dp"
+        android:text="Your opinion of me doesn't define  who i am"
+            android:textSize="25dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        
+
+    </RelativeLayout>>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+           
+       android:layout_marginTop="300dp"
+        android:background="@drawable/note_backword"
+        android:id="@+id/l_next"
+        />
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+       android:layout_marginTop="300dp"
+        android:layout_marginLeft="345dp"
+        android:background="@drawable/notes_forward"
+        android:id="@+id/r_next"
+        />
+
+    
+    
+  
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="Phonk playList => evil_ themes"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="50dp"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        
+         android:layout_marginTop="610dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/chat_logo"
+        android:id="@+id/chat"
+        />
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+       android:layout_marginTop="610dp"
+        android:layout_marginLeft="290dp"
+        android:background="@drawable/you"
+        android:id="@+id/like"
+        />
+
+</RelativeLayout>

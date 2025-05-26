@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="390dp"
+    android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
+    android:layout_height="match_parent"
+    android:background="#c3c3c3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@android:color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Gk music IT"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+
+     </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="800dp"
+        android:layout_height="350dp"
+        android:background="#3f48cc"
+        android:layout_marginTop="30dp">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            
+               <RelativeLayout
+                   android:layout_width="775dp"
+                   android:layout_height="350dp"
+                    android:background="#c3c3c3"
+                android:id="@+id/update_music"
+                    >
+                    
+                 <RelativeLayout
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="30dp"
+                   android:background="@drawable/music_new_panel">
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                   
+                    android:src="@drawable/new_song"
+                    android:layout_marginLeft="35dp"
+                    />
+                    
+                    <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginLeft="18dp"
+                    android:gravity="center"
+                    android:textSize="29dp"
+                    android:textStyle="bold"
+                    android:padding="1dp"
+                    android:text="newsong"
+                    android:textColor="@android:color/white"/>
+               
+                        
+                  </RelativeLayout>
+                 
+                 <RelativeLayout
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginLeft="220dp"
+                   android:background="@drawable/music_new_panel">
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                        
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                       
+                    android:src="@drawable/love_hits"
+                    android:layout_marginLeft="35dp"
+                    />
+               
+                    <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginLeft="18dp"
+                    android:gravity="center"
+                    android:textSize="29dp"
+                    android:textStyle="bold"
+                    android:padding="1dp"
+                    android:text="love Hits"
+                    android:textColor="@android:color/white"/>
+                        
+                  </RelativeLayout>
+
+                 <RelativeLayout
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginLeft="410dp"
+                   android:background="@drawable/music_new_panel">
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                       
+                    android:src="@drawable/dance"
+                    android:layout_marginLeft="35dp"
+                    />
+                    <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginLeft="18dp"
+                    android:gravity="center"
+                    android:textSize="29dp"
+                    android:textStyle="bold"
+                    android:padding="1dp"
+                    android:text="Dance"
+                    android:textColor="@android:color/white"/>
+                        
+                  </RelativeLayout>
+                 
+                 <RelativeLayout
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginLeft="600dp"
+                   android:background="@drawable/music_new_panel">
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                       
+                    android:src="@drawable/breakup"
+                    android:layout_marginLeft="35dp"
+                    />
+               
+                   <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginLeft="18dp"
+                    android:gravity="center"
+                    android:textSize="29dp"
+                    android:textStyle="bold"
+                    android:padding="1dp"
+                    android:text="Breakup"
+                    android:textColor="@android:color/white"/>     
+                  </RelativeLayout>
+
+
+
+
+
+                 <RelativeLayout
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                        android:layout_marginTop="190dp"
+                        android:layout_marginLeft="30dp"
+                   android:background="@drawable/music_new_panel">
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                       
+                    android:src="@drawable/love_music"
+                    android:layout_marginLeft="35dp"
+                    />
+                   <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginLeft="18dp"
+                    android:gravity="center"
+                    android:textSize="29dp"
+                    android:textStyle="bold"
+                    android:padding="1dp"
+                    android:text="loveMusic"
+                    android:textColor="@android:color/white"/>
+                        
+                  </RelativeLayout>
+                 
+                 <RelativeLayout
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:layout_marginTop="190dp"
+                   android:layout_marginLeft="220dp"
+                   android:background="@drawable/music_new_panel">
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                       
+                    android:src="@drawable/old_song"
+                    android:layout_marginLeft="35dp"
+                    />
+               
+                   <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginLeft="18dp"
+                    android:gravity="center"
+                    android:textSize="29dp"
+                    android:textStyle="bold"
+                    android:padding="1dp"
+                    android:text="Old song"
+                    android:textColor="@android:color/white"/>     
+                  </RelativeLayout>
+
+                 <RelativeLayout
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                        android:layout_marginTop="190dp"
+                        android:layout_marginLeft="410dp"
+                   android:background="@drawable/music_new_panel">
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                       
+                    android:src="@drawable/phonk"
+                    android:layout_marginLeft="35dp"
+                    />
+               
+                   <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginLeft="18dp"
+                    android:gravity="center"
+                    android:textSize="29dp"
+                    android:textStyle="bold"
+                    android:padding="1dp"
+                    android:text="Phonk"
+                    android:textColor="@android:color/white"/>     
+                  </RelativeLayout>
+                 
+                 <RelativeLayout
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:layout_marginTop="190dp"
+                   android:layout_marginLeft="600dp"
+                   android:background="@drawable/music_new_panel">
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                       
+                    android:src="@drawable/gym_song"
+                    android:layout_marginLeft="35dp"
+                    />
+                    <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginLeft="18dp"
+                    android:gravity="center"
+                    android:textSize="29dp"
+                    android:textStyle="bold"
+                    android:padding="1dp"
+                    android:text="Gym"
+                    android:textColor="@android:color/white"/>
+                        
+                  </RelativeLayout>
+
+
+
+
+                </RelativeLayout>
+                
+
+                
+                
+
+            
+
+
+        </HorizontalScrollView>
+
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="14dp"
+        android:background="@drawable/music_play_panel"
+        android:id="@+id/music_play_panel">
+
+         <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                       
+                    android:src="@drawable/new_song"
+                    android:layout_marginLeft="10dp"
+                    />
+
+        <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="-18dp"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    android:padding="1dp"
+                    android:text="newsong"
+                    android:textColor="@android:color/white"/>
+        
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/music_pause"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="285dp"
+            android:id="@+id/play"/>
+               
+        
+
+        </RelativeLayout>
+    
+       <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="490dp"
+            android:visibility="visible"
+            android:fillViewport="true"
+            android:id="@+id/c_layout"
+           >
+          <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#c3c3c3"
+                android:id="@+id/history_music"
+                android:orientation="vertical">
+              
+
+            <RelativeLayout
+               android:layout_width="110dp"
+               android:layout_height="160dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="15dp"
+               android:background="@drawable/music_history_panel">
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                     android:layout_marginLeft="15dp"   
+                    android:src="@drawable/phonk"
+                   
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="1dp"
+                    android:text="Phonk"
+                    android:textColor="@android:color/holo_blue_bright"/>
+               
+                        
+                  </RelativeLayout>
+
+            <RelativeLayout
+               android:layout_width="110dp"
+               android:layout_height="160dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="145dp"
+               android:background="@drawable/music_history_panel">
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                     android:layout_marginLeft="15dp"   
+                    android:src="@drawable/tamil_hits"
+                   
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="1dp"
+                    android:text="Tamil Hits"
+                    android:textColor="@android:color/holo_blue_bright"/>
+               
+                        
+                  </RelativeLayout>
+
+            <RelativeLayout
+               android:layout_width="110dp"
+               android:layout_height="160dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="270dp"
+               android:background="@drawable/music_history_panel">
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                     android:layout_marginLeft="15dp"   
+                    android:src="@drawable/gym_song"
+                   
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="1dp"
+                    android:text="Gym song"
+                    android:textColor="@android:color/holo_blue_bright"/>
+               
+                        
+                  </RelativeLayout>
+
+
+
+            <RelativeLayout
+               android:layout_width="110dp"
+               android:layout_height="160dp"
+               android:layout_marginTop="195dp"
+               android:layout_marginLeft="15dp"
+               android:background="@drawable/music_history_panel">
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                     android:layout_marginLeft="15dp"   
+                    android:src="@drawable/dance"
+                   
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="1dp"
+                    android:text="Dance"
+                    android:textColor="@android:color/holo_blue_bright"/>
+               
+                        
+                  </RelativeLayout>
+
+            <RelativeLayout
+               android:layout_width="110dp"
+               android:layout_height="160dp"
+               android:layout_marginTop="195dp"
+               android:layout_marginLeft="145dp"
+               android:background="@drawable/music_history_panel">
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                     android:layout_marginLeft="15dp"   
+                    android:src="@drawable/best_motivational"
+                   
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="1dp"
+                    android:text="Motivation"
+                    android:textColor="@android:color/holo_blue_bright"/>
+               
+                        
+                  </RelativeLayout>
+
+            <RelativeLayout
+               android:layout_width="110dp"
+               android:layout_height="160dp"
+               android:layout_marginTop="195dp"
+               android:layout_marginLeft="270dp"
+               android:background="@drawable/music_history_panel">
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                     android:layout_marginLeft="15dp"   
+                    android:src="@drawable/love_hits"
+                   
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="1dp"
+                    android:text="Love Hits"
+                    android:textColor="@android:color/holo_blue_bright"/>
+               
+                        
+                  </RelativeLayout>
+
+
+
+            <RelativeLayout
+               android:layout_width="110dp"
+               android:layout_height="160dp"
+               android:layout_marginTop="395dp"
+               android:layout_marginLeft="15dp"
+               android:layout_marginBottom="50dp"
+               android:background="@drawable/music_history_panel">
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                     android:layout_marginLeft="15dp"   
+                    android:src="@drawable/love_music"
+                   
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="1dp"
+                    android:text="Love Music"
+                    android:textColor="@android:color/holo_blue_bright"/>
+               
+                        
+                  </RelativeLayout>
+
+            <RelativeLayout
+               android:layout_width="110dp"
+               android:layout_height="160dp"
+               android:layout_marginTop="395dp"
+               android:layout_marginLeft="145dp"
+               android:layout_marginBottom="50dp"
+               android:background="@drawable/music_history_panel">
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                     android:layout_marginLeft="15dp"   
+                    android:src="@drawable/old_song"
+                   
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="1dp"
+                    android:text="Old song"
+                    android:textColor="@android:color/holo_blue_bright"/>
+               
+                        
+                  </RelativeLayout>
+
+            <RelativeLayout
+               android:layout_width="110dp"
+               android:layout_height="160dp"
+               android:layout_marginTop="395dp"
+               android:layout_marginLeft="270dp"
+               android:layout_marginBottom="50dp"
+               android:background="@drawable/music_history_panel">
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                     android:layout_marginLeft="15dp"   
+                    android:src="@drawable/breakup"
+                   
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="1dp"
+                    android:text="breakup"
+                    android:textColor="@android:color/holo_blue_bright"/>
+               
+                        
+                  </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="830dp"
+        android:background="#c3c3c3"
+        android:visibility="invisible"
+        android:id="@+id/search_layout"
+        >
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@android:color/holo_blue_bright"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="100dp"
+            android:text=" DataBase not connected"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+
+        </RelativeLayout>
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/black"
+        android:layout_marginTop="758dp">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/Home"
+            android:id="@+id/home"
+            />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="110dp"
+            android:background="@drawable/search_2"
+            android:id="@+id/search"
+            
+            />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="200dp"
+            android:background="@drawable/Library"
+            android:id="@+id/Library"
+            
+            />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="300dp"
+            android:background="@drawable/profile_2"
+            />
+
+        </RelativeLayout>
+
+      <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"           
+        android:layout_marginTop="680dp" 
+        android:layout_marginLeft= "3dp"
+        android:background="@drawable/All_menu"
+        android:id="@+id/All_menu"
+          />
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="63dp"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="680dp"
+        android:layout_marginLeft="80dp"
+        android:orientation="horizontal"
+       
+        android:id="@+id/All_menu_layout"
+        android:visibility="invisible">
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/Chat_logo"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:id="@+id/chat"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/music_logo"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="6dp"
+            />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/reels_logo"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="6dp"
+            android:id="@+id/bat"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/profile_logo"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="6dp"/>
+
+    </LinearLayout>
+
+    
+
+    </RelativeLayout>

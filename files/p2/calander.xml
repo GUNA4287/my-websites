@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a889eb"
+    android:id="@+id/relativeLayout1"
+           
+   >
+
+
+     <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="294dp"
+        android:visibility="visible"
+        android:layout_marginLeft="0dp"
+        android:fillViewport="true"
+        android:id="@+id/calender_layout"
+      >
+       
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#a889eb"
+            android:id="@+id/calender"
+         
+            android:orientation="vertical"
+           
+            >
+             
+            
+        </LinearLayout>
+    </ScrollView>
+       
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/hh"
+        android:layout_marginTop="670dp"
+        android:layout_marginLeft="130dp"
+        android:id="@+id/cal"
+        android:rotation="120"
+        />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/hh"
+        android:layout_marginTop="710dp"
+        android:layout_marginLeft="160dp"
+         
+        android:id="@+id/task"
+    />
+       <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/hh"
+        android:layout_marginTop="670dp"
+        android:layout_marginLeft="180dp"
+        android:id="@+id/pro"
+        android:rotation="-120"
+        />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/main_menu"
+        android:layout_marginTop="650dp"
+        android:layout_marginLeft="135dp"
+        android:id="@+id/menu"
+        
+        />
+
+    <RelativeLayout
+        android:layout_width="411dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="0dp"
+        android:background="#9e7dec"
+        android:minWidth="25px"
+        android:minHeight="25px">
+
+        <CalendarView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            
+            android:layout_marginTop="0dp"
+            
+            android:background="#9773eb"
+            android:dateTextAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/calendarView1"
+          
+            
+          
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="314dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="53.4dp"
+        android:background="#a889eb"
+        android:textSize="33dp"
+      
+        android:textStyle="bold"
+       android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:id="@+id/calender_textView"
+        />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="168dp"
+        android:background="@drawable/cal_value_close"
+        android:text="x"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_marginTop="330dp"
+        android:textAlignment="center"
+        android:id="@+id/value_layout_close"
+        android:visibility="invisible"
+        
+      />
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="20dp"
+        android:background="#9773eb"
+        android:id="@+id/value_layout"
+        android:visibility="invisible"
+      >
+        <EditText
+            android:layout_width="295dp"
+            android:layout_height="50dp"
+            android:id="@+id/editText1"   
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:hint="Task Tittle"
+            android:textColorHint="@android:color/white"
+            android:background="#9773eb"/>
+        <Button
+            android:layout_width="44dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="295dp"
+            
+            
+            android:id="@+id/enter"
+            android:textSize="40dp"/>
+
+
+    </RelativeLayout>
+
+    <Button
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          android:layout_marginTop="500dp"
+          android:layout_marginLeft="300dp"
+          android:background="@drawable/add"
+        android:id="@+id/add1"/>
+
+    
+
+    <RelativeLayout
+        android:layout_width="413dp"
+        android:layout_height="820.0dp"
+        android:background="@drawable/completed"
+        android:id="@+id/completed"
+        android:visibility="invisible"
+      />
+     <RelativeLayout
+        android:layout_width="413dp"
+        android:layout_height="820.0dp"
+        android:layout_marginTop="-509dp"
+        android:background="@drawable/completed"
+        android:id="@+id/completed2"
+        android:visibility="visible"
+      
+      />
+
+</RelativeLayout>

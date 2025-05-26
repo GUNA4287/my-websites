@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="390dp"
+    android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
+    android:layout_height="match_parent"
+    android:background="#3f48cc">
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@android:color/white"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/chat_head">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/back_icon"
+            android:id="@+id/chat_back"/>
+
+           <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/female3"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="6dp"
+                    />
+        <TextView
+             android:layout_width="130dp"
+             android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:text=" Kosui..  "
+            android:gravity="start"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:layout_marginLeft="130dp"/>
+        <TextView
+             android:layout_width="130dp"
+             android:layout_height="30dp"
+            android:background=
+            "@android:color/transparent"
+            android:text="Watching"
+            android:gravity="start"
+            android:textStyle="bold"
+            android:textColor="#0ed145"
+            android:textSize="15dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginLeft="130dp"/>
+
+              <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/video_icon"
+                    android:layout_marginLeft="290dp"
+                    android:layout_marginTop="18dp"
+                    android:id="@+id/v_call"
+                
+                    />
+              <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/call_icon"
+                    android:layout_marginLeft="340dp"
+                    android:layout_marginTop="18dp"
+                   android:id="@+id/call"
+            
+                    />
+        </RelativeLayout>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="115dp"
+            android:visibility="visible"
+            android:fillViewport="true"
+            android:id="@+id/c_layout"
+           >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#3f48cc"
+                android:id="@+id/chat_layout"
+                android:orientation="vertical"
+            >
+
+
+            </LinearLayout>
+        </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="400dp"
+        android:background="#3f48cc"
+       android:id="@+id/message_layout"
+       android:visibility="invisible"
+        >
+         
+        <EditText
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            
+            android:background="@drawable/taskmenu"
+            
+            android:focusable="true"
+            android:textColor="@android:color/black"
+            android:id="@+id/editText1"
+            android:focusableInTouchMode="true"
+            android:padding="10dp"
+            />
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="340dp"
+            android:background="@drawable/send"
+            android:id="@+id/send"
+                />
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="700dp"
+        android:layout_marginLeft="170dp"
+        android:background="@drawable/text_of_notes"
+        android:id="@+id/message"/>
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/user_send"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="320dp"
+        android:id="@+id/user"/>
+
+
+</RelativeLayout>

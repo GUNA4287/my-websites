@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="390dp"
+    android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
+    android:layout_height="match_parent"
+    android:background="#3f48cc">
+
+
+
+
+
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+     
+        android:background="@drawable/bat_top_back">
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/library_back"
+            android:id="@+id/chat_back"/>
+
+           <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/bat_img"
+                    android:layout_marginLeft="145dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+              <TextView
+                  android:layout_width="100dp"
+                  android:layout_height="50dp"
+                  android:layout_marginLeft="160dp"
+                  
+                  android:textColor="@android:color/white"
+                  android:layout_marginTop="90dp"
+                  android:textSize="20dp"
+                  android:id="@+id/text1"/>
+    
+
+              
+        </RelativeLayout>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="115dp"
+            android:visibility="visible"
+            android:fillViewport="true"
+            android:id="@+id/c_layout"
+           >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#3f48cc"
+                android:id="@+id/chat_layout"
+                android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="339.1dp"
+                android:layout_height="90dp"
+                android:background="@drawable/bot_welcome"
+                android:layout_marginLeft="28.5dp"
+                android:textAlignment="center"
+                android:text="         Welcome to comeback Sir   ,          I Am HIDDEN                                  "
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:padding="20dp"
+                android:textStyle="bold"
+                />
+               
+
+            </LinearLayout>
+        </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="400dp"
+        android:background="#3f48cc"
+       android:id="@+id/message_layout"
+       android:visibility="invisible"
+        >
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/mic_img"
+           android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/mic"/>
+         
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            
+            android:background="@drawable/taskmenu"
+            
+            android:focusable="true"
+            android:textColor="@android:color/black"
+            android:id="@+id/questioneditText"
+            android:focusableInTouchMode="true"
+            android:padding="10dp"
+            />
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="340dp"
+            android:background="@drawable/send"
+            android:id="@+id/searchbutton"
+                />
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="700dp"
+        android:layout_marginLeft="170dp"
+        android:background="@drawable/text_of_notes"
+        android:id="@+id/message"/>
+
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bat_setting_img"
+        android:layout_marginLeft="355dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/bat_setting_btn"/>
+
+    <RelativeLayout
+        android:layout_width="254.0dp"
+        android:layout_height="200dp"
+        android:background="@drawable/bat_setting_layout"
+        android:layout_marginTop="219.7dp"
+        android:layout_marginLeft="66.6dp"
+        android:visibility="invisible"
+        android:id="@+id/bat_setting_layout">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:text="Number of word's"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="500"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="40dp"
+           android:layout_marginLeft="85dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/output_of_nwords"/>
+
+           <EditText
+               android:layout_width="110dp"
+               android:layout_height="50dp"
+               android:gravity="center"  
+               android:layout_marginTop="110dp"
+               android:textAlignment="center"
+               android:textSize="30dp"
+               android:layout_marginLeft="15dp"
+               android:inputType="number"
+               android:id="@+id/input_of_nwords"
+            
+            />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="180dp"
+            android:background="@android:color/holo_red_dark"
+            android:id="@+id/done_input_of_nwords"/>
+
+
+        </RelativeLayout>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    
+
+
+           
+    
+
+    
+
+    
+  
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="OBITO.OBITO" android:installLocation="preferExternal">
+	<application android:allowBackup="true" android:supportsRtl="true" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:icon="@mipmap/logo"></application>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+</manifest>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/relativeLayout1"
+  >
+    <RelativeLayout
+        android:layout_width="411dp"
+        android:layout_height="626.9dp"
+        android:layout_marginTop="195dp"
+        android:background="@drawable/kill">
+
+    </RelativeLayout>
+  
+    
+      <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/hh"
+        android:layout_marginTop="670dp"
+        android:layout_marginLeft="130dp"
+        android:id="@+id/cal"
+        android:rotation="120"
+        />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/hh"
+        android:layout_marginTop="710dp"
+        android:layout_marginLeft="160dp"
+         
+        android:id="@+id/task"
+    />
+       <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/hh"
+        android:layout_marginTop="670dp"
+        android:layout_marginLeft="180dp"
+        android:id="@+id/pro"
+        android:rotation="-120"
+        />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/main_menu"
+        android:layout_marginTop="650dp"
+        android:layout_marginLeft="135dp"
+        android:id="@+id/menu"
+        
+        />
+    <RelativeLayout
+        android:layout_width="411dp"
+        android:layout_height="191.4dp"
+        android:background="@drawable/profile"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        
+        >
+
+        <TextView
+            android:layout_width="338.0dp"
+            android:layout_height="40dp"
+            android:text="GUNALAKSHMANAN  M"
+            android:textColor="@android:color/white"
+            android:textSize="28dp"
+            android:layout_marginLeft="13dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="338.0dp"
+            android:layout_height="30dp"
+            android:text="GOLD LEVEL"
+            android:textColor="#eecc40"
+            android:textSize="28dp"
+            android:layout_marginLeft="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="88dp"
+            />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/circle_profile"
+            android:src="@drawable/image1"
+            android:id="@+id/image"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="40dp" />
+        
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="193dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="8dp"
+       android:background="@drawable/total">
+            
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="75"
+            android:textSize="75dp"
+            android:textAlignment="center"
+           android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    
+
+    <RelativeLayout
+        android:layout_width="193dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="210dp"
+        android:background="@drawable/total">
+
+         <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="25"
+            android:textSize="75dp"
+            android:textAlignment="center"
+           android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="413dp"
+        android:layout_height="820.0dp"
+        android:background="@drawable/completed"
+        android:id="@+id/completed"
+        android:visibility="invisible"
+      />
+     <RelativeLayout
+        android:layout_width="413dp"
+        android:layout_height="820.0dp"
+        android:layout_marginTop="-509dp"
+        android:background="@drawable/completed"
+        android:id="@+id/completed2"
+        android:visibility="visible"
+      
+      />
+
+     <ImageView
+              android:layout_width="200dp"
+              android:layout_height="200dp"
+          android:id="@+id/piechart"
+         android:layout_marginTop="380dp"
+        android:layout_marginLeft="10dp"
+       
+     android:background="@null"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_marginLeft="64.4dp"
+        android:layout_marginTop="461.2dp"
+        android:background="@null"
+        android:layout_height="90dp"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        android:id="@+id/percentageText"
+        android:textColor="#000144"      
+        />
+      <TextView
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+         android:background="@android:color/white"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="225dp"
+        />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="44dp"
+        android:background="@null"
+        android:text="Completed"
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="257dp"
+        android:textStyle="bold"
+        android:textColor="#000144"
+        android:textSize="28dp"
+      />
+
+    <Button
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          android:layout_marginTop="710dp"
+          android:layout_marginLeft="300dp"
+          android:background="@drawable/c_menu"
+        android:id="@+id/sub_menu"/>
+
+    <RelativeLayout
+        android:layout_width="260.6dp"
+        android:layout_height="760.9dp"
+        android:background="@drawable/guna"
+        android:id="@+id/sub_menu_layout"
+        android:visibility="invisible"
+        
+      >
+        <ImageView
+            android:layout_width="357.4dp"
+            android:layout_height="172.3dp"
+            android:background="@drawable/king"
+            android:layout_marginLeft="0.0dp"
+            android:layout_marginTop="0.0dp" />
+
+         <Button
+               android:layout_width="200dp"
+               android:layout_marginTop="210dp"
+               android:layout_height="65dp"
+               android:layout_marginLeft="55dp"
+               android:text="Category"
+               android:textColor="@android:color/white"
+               android:textSize="30dp"
+               android:textAlignment="center"
+               android:textStyle="bold"
+               android:background="@null"
+            android:id="@+id/category"
+            />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+            android:background="@drawable/category"
+            android:layout_marginTop="220dp"
+            />
+
+          <Button
+               android:layout_width="200dp"
+               android:layout_marginTop="270dp"
+               android:layout_height="65dp"
+               android:layout_marginLeft="55dp"
+               android:text="Task View"
+               android:textColor="@android:color/white"
+               android:textSize="30dp"
+               android:textAlignment="center"
+               android:textStyle="bold"
+               android:background="@null"
+            />
+
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+            android:layout_marginTop="280dp"
+            android:background="@drawable/task_view"
+            />
+        <Button
+               android:layout_width="200dp"
+               android:layout_marginTop="330dp"
+               android:layout_height="65dp"
+               android:layout_marginLeft="55dp"
+               android:text="Date Time"
+               android:textColor="@android:color/white"
+               android:textSize="30dp"
+               android:textAlignment="center"
+               android:textStyle="bold"
+               android:background="@null"
+            />
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+            android:background="@drawable/date"
+           
+            android:layout_marginTop="340dp"
+            />
+        <Button
+               android:layout_width="200dp"
+               android:layout_marginTop="390dp"
+               android:layout_height="65dp"
+               android:layout_marginLeft="55dp"
+               android:text="Setting"
+               android:textColor="@android:color/white"
+               android:textSize="30dp"
+               android:textAlignment="center"
+               android:textStyle="bold"
+               android:background="@null"
+            />
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/setting"
+
+                android:layout_marginTop="400dp"
+            />
+        <Button
+               android:layout_width="200dp"
+               android:layout_marginTop="450dp"
+               android:layout_height="65dp"
+               android:layout_marginLeft="55dp"
+               android:text="FAG"
+               android:textColor="@android:color/white"
+               android:textSize="30dp"
+               android:textAlignment="center"
+               android:textStyle="bold"
+               android:background="@null"
+            />
+
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/fag"
+
+                android:layout_marginTop="460dp"
+            />
+
+
+        <Button
+               android:layout_width="200dp"
+               android:layout_marginTop="510dp"
+               android:layout_height="65dp"
+               android:layout_marginLeft="55dp"
+               android:text="Privac Policy"
+               android:textColor="@android:color/white"
+               android:textSize="30dp"
+               android:textAlignment="center"
+               android:textStyle="bold"
+               android:background="@null"
+            />
+        <Button
+               android:layout_width="200dp"
+               android:layout_marginTop="570dp"
+               android:layout_height="65dp"
+               android:layout_marginLeft="55dp"
+               android:text="Feed Back"
+               android:textColor="@android:color/white"
+               android:textSize="30dp"
+               android:textAlignment="center"
+               android:textStyle="bold"
+               android:background="@null"
+            />
+        <Button
+            android:layout_width="200dp"
+            android:layout_marginTop="630dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="29.8dp"
+            android:text="Version 1.001.254"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="@null"
+            />
+      
+
+
+
+
+    </RelativeLayout>
+
+
+
+    
+   
+
+</RelativeLayout>
